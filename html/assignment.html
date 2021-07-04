@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tasks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers|Fuggles' rel='stylesheet'>
+        <script src="../js/script1.js"></script>
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    </head>
+    <body class="background">
+        
+        <nav id="NavBar">
+            <div class="logo">
+                Aarush Jain
+            </div>
+            
+            <ul>
+                <li><a href="../index.html" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Home</a></li>
+                <li><a href="about.html" onmouseover="hoverin(this)" onmouseout="hoverout(this)">About</a></li>
+                <li><a class="active" href="assignment.html" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Assignment</a></li>
+                <li><a href="contact.html" onmouseover="hoverin(this)" onmouseout="hoverout(this)">Contact</a></li>
+            </ul> 
+        </nav>
+
+
+
+        <div>
+            <br><br>         
+        <div>
+            <br><hr class="TopicBreak"><br>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2"><u>Hello</u></td>
+                        <td>Hi</td>
+                        <td >Bonjour</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">This is a Merged Cell</td>
+                    </tr>
+                </table>
+        </div>
+        <br><hr class="TopicBreak"><br>
+        <div class="square-container">
+                <h3 class="Heading" style="color: rgb(175, 3, 3);">Recently Watched</h3>
+                <br>
+                <img src="../img/movies1.jpg" alt="BingeWatch" id="slideshow" onclick="changeImage()">
+        </div>
+        <br>                
+        <br><hr class="TopicBreak"><br>
+        <div>
+                <h3 class="Heading" style="color: white;">Rate Me</h3>
+                <br><br>
+                <form id="SkillForm">
+                    <label for="name"></label>
+                    <input id="name" type="text" name="Name" placeholder="Enter your name" required>
+                    <label for="skill"></label>
+                    <input id="skill" type="text" name="Skill" placeholder="Enter Skill" required>
+                    <label for="proficiency"></label>
+                    <select id="proficiency" name="Proficiency" required>
+                        <option selected value="">Select Proficiency</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Proficient">Proficient</option>
+                    </select>                    
+                </form>
+                <button onclick="AddtoSkillTable()">Submit</button>
+        </div>
+        <br>
+    
+        <div>
+                <table class="table" id="SkillTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="EnterData"></tbody>
+                </table>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    </body>
+</html>
